@@ -1,7 +1,6 @@
-
 * {
     box-sizing: border-box;
-    --main-color: #2196F3; 
+    --main-color: #2196F3;
 }
 
 body,
@@ -22,12 +21,12 @@ html {
 
 header {
     background-color: #fff;
-    padding-top: 100px;
+    padding-top: 30px;
     overflow: hidden;
 }
 
 header nav {
-    transform: translate(0,2px);
+    transform: translate(0, 2px);
 }
 
 header .tabs .tab {
@@ -35,7 +34,7 @@ header .tabs .tab {
 }
 
 
-header .tabs .tab a{
+header .tabs .tab a {
     color: #222;
     letter-spacing: 1px;
     font-weight: 600;
@@ -44,7 +43,8 @@ header .tabs .tab a{
 
 }
 
-header .tabs .tab a:focus, {
+header .tabs .tab a:focus,
+    {
     background-color: transparent;
     color: #FF7726;
 }
@@ -64,24 +64,25 @@ header .tabs .tab a:hover {
 }
 
 header .tabs .indicator {
-    transform: translate(0,0px);
+    transform: translate(0, 0px);
     z-index: 2;
     background-color: #FF7726;
 }
 
 header .divider {
-    transform: translate(-50%,-2px);
-    left:50%;
+    transform: translate(-50%, -2px);
+    left: 50%;
     height: 2px;
     width: 100vw;
-    background-color: #bdbdbd ;
+    background-color: #bdbdbd;
     position: relative;
     z-index: 1;
 }
 
-.brand-logo img {
+header .brand-logo img {
     height: 50px;
 }
+
 nav i.material-icons {
     font-size: 40px;
 }
@@ -92,6 +93,57 @@ main {
     padding: 0;
     padding-bottom: 100px;
 }
+
+#about {
+    padding-top: 30px;
+}
+
+
+#skicams {
+    padding-top: 30px;
+}
+
+
+
+#skicams .time {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    padding: 5px 10px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+#skicams .card .card-image .camera-image {
+    height: 270px;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+}
+
+#skicams .card .card-title {
+    display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main #contact {
     position: relative;
@@ -108,7 +160,7 @@ main #contact .container .row {
     position: relative;
     padding: 0;
     margin: 0;
-    min-height: calc(100vh - 320px);
+    min-height: calc(100vh - 250px);
     width: 100%;
 }
 
@@ -128,31 +180,45 @@ main #contact .container .row {
     padding: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-55%)
+    transform: translate(-50%, -55%)
+}
+
+#contact-form .input-field > label {
+    font-size: 0.9rem;
+    line-height: 3rem;
+}
+
+#contact-form .input-field {
+    margin: 0;
+    padding: 0;
+}
+
+#contact-form .input-field:nth-child(3) {
+    margin-top: 30px;
 }
 
 #contact-form .input-field label span {
     color: #FF7726;
 }
- 
 
-  #contact-form .input-field input:focus + label {
-     color: var(--main-color) ;
-   }
- 
-   #contact-form .input-field input:focus {
-     border-bottom: 1px solid var(--main-color);
-     box-shadow: 0 1px 0 0 var(--main-color);
-   }
 
-  #contact-form .input-field textarea:focus + label {
-     color: var(--main-color) ;
-   }
-  
-   #contact-form .input-field textarea:focus {
-     border-bottom: 1px solid var(--main-color);
-     box-shadow: 0 1px 0 0 var(--main-color);
-   }
+#contact-form .input-field input:focus + label {
+    color: var(--main-color);
+}
+
+#contact-form .input-field input:focus {
+    border-bottom: 1px solid var(--main-color);
+    box-shadow: 0 1px 0 0 var(--main-color);
+}
+
+#contact-form .input-field textarea:focus + label {
+    color: var(--main-color);
+}
+
+#contact-form .input-field textarea:focus {
+    border-bottom: 1px solid var(--main-color);
+    box-shadow: 0 1px 0 0 var(--main-color);
+}
 
 
 footer {
