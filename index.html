@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie rekrutacyjne</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrzej Lichoń">
+    <meta name="description" content="Zadanie rekrutacyjne">
+    <meta name="keywords" content="PGS Software, HTML,CSS,JavaScript">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container">
+                <nav class="nav-extended transparent z-depth-0">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">
+                      <img src="https://softwaretalks.pl/wp-content/themes/software-talks-2-0/dist/assets/pgs-logo.svg" alt="Logo">
+                    </a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons blue-grey-text text-darken-4 ">menu</i></a>
+                    </div>
+                    <div class="nav-content ">
+                        <ul class="tabs">
+                            <li class="tab"><a class="waves-effect active" href="#about">about</a></li>
+                            <li class="tab"><a class="waves-effect" href="#skicams">skicams</a></li>
+                            <li class="tab"><a class="waves-effect" href="#contact">contact</a></li>
+                        </ul>
+                        <div class="divider"></div>
+                    </div>
+                </nav>
+                <ul class="sidenav table-of-contents" id="mobile-nav">
+                    <li><a class="sidenav-close" href="#about" data-nav="about">about</a></li>
+                    <li><a class="sidenav-close" href="#skicams" data-nav="skicams">skicams</a></li>
+                    <li><a class="sidenav-close" href="#contact" data-nav="contact">contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+                <div id="about" class="col">
+                   <div class="container">
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <div class="card hoverable ">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ad303408eb930a76c2822c3cc7f7a33&auto=format&fit=crop&w=800&q=60">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Card Title 1</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi recusandae, reiciendis corporis vel perferendis dicta laboriosam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l4">
+                            <div class="card hoverable ">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b54e36ca60c8e2b8f57a897b94cdd5e3&auto=format&fit=crop&w=800&q=60">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Card Title 2</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi recusandae, reiciendis corporis vel perferendis dicta laboriosam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l4">
+                            <div class="card hoverable ">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=95618c0e060665fcf0c9e489d8b22982&auto=format&fit=crop&w=800&q=80">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Card Title 3</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi recusandae, reiciendis corporis vel perferendis dicta laboriosam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="skicams" class="col ">
+            
+               <div id="cam" style="height: 300px; width: 300px"></div>
+                
+                </div>
+
+                <div id="contact" class="col">
+                   <div class="container">
+                    <div class="row valign-wrapper ">
+                        <form id="contact-form" class="col card-panel " action="#" method="post">
+                            <div class="form-inner">
+                                <div class="input-field">
+                                    <input id="name" name="name" type="text" >
+                                    <label for="name">Name <span>*</span></label>
+                                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                </div>
+                                <div class="input-field">
+                                    <input id="email" name="email" type="email" >
+                                    <label for="email">Email <span>*</span></label>
+                                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                </div>
+                                <div class="input-field">
+                                    <textarea id="message" name="message" maxlength="500" class="materialize-textarea"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+
+                                <div class="input-field right-align">
+                                    <button class="btn waves-effect waves-light blue"  type="submit" name="action">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+        </main>
+        <footer class="valign-wrapper center">
+            <div class="container">
+                <p class="center-align">Powerded by PGS</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./scripts/skicams.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tabs = document.querySelectorAll('.tabs');
+            var sidenav = document.querySelectorAll('.sidenav');
+            var sidenavInstance = M.Sidenav.init(sidenav);
+            var tabsInstance = M.Tabs.init(tabs);
+
+            var section = document.querySelectorAll('.scrollspy');
+            var scrollSpy = M.ScrollSpy.init(section);
+
+            console.log(tabsInstance);
+
+
+
+            var mobileNav = document.querySelectorAll('.sidenav-close');
+
+            [...mobileNav].forEach(function(el) {
+                el.addEventListener('click', function(e) {
+                    var t = el.dataset.nav;
+
+
+
+
+                    var inst = M.Tabs.getInstance(tabs);
+                    inst.select('contact');
+                    //                    console.log(el);
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
