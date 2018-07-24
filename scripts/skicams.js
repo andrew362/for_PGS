@@ -12,7 +12,10 @@
 
     function getCurrentTime() {
         let d = new Date();
-        let currentTime = d.getDate() + "-" + d.getMonth() + "-" + d.getFullYear();
+        let dd = d.getDate();
+        let mm = d.getMonth()+1;
+        let yyyy = d.getFullYear();
+        let currentTime = [(dd > 9 ? '' : '0') + dd , (mm > 9 ? '' : '0') + mm , yyyy].join('-');
         [...timeStamp].forEach(t => t.textContent = currentTime);
     }
 
