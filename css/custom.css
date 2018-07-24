@@ -219,7 +219,9 @@ main #contact .container .row {
     border-bottom: 1px solid var(--main-color);
     box-shadow: 0 1px 0 0 var(--main-color);
 }
-
+input[type="submit"] {
+    color: #fff;
+}
 
 footer {
     position: absolute;

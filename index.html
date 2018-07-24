@@ -20,7 +20,7 @@
             <div class="container">
                 <nav class="nav-extended transparent z-depth-0">
                     <div class="nav-wrapper">
-                        <a href="#" class="brand-logo">
+                        <a href="https://www.pgs-soft.com/" class="brand-logo">
                       <img src="https://softwaretalks.pl/wp-content/themes/software-talks-2-0/dist/assets/pgs-logo.svg" alt="Logo">
                     </a>
                         <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons blue-grey-text text-darken-4 ">menu</i></a>
@@ -43,7 +43,7 @@
         </header>
 
         <main>
-                <div id="about" class="col">
+                <section id="about" class="col">
                    <div class="container">
                     <div class="row">
                         <div class="col s12 l4">
@@ -81,8 +81,8 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                <div id="skicams" class="col ">
+                </section>
+                <section id="skicams" class="col ">
             
                    <div class="container">
                        <div class="row">
@@ -109,36 +109,39 @@
                        </div>
                    </div>
                 
-                </div>
+                </section>
 
-                <div id="contact" class="col">
+                <section id="contact" class="col">
                    <div class="container">
                     <div class="row valign-wrapper ">
-                        <form id="contact-form" class="col card-panel " action="#" method="post">
+                        <form id="contact-form" class="col card-panel " action="send.html" method="post">
                             <div class="form-inner">
                                 <div class="input-field">
-                                    <input id="name" name="name" type="text" >
+                                    <input id="name" name="name" type="text" required>
                                     <label for="name">Name <span>*</span></label>
-                                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                    <span class="helper-text" data-error="Wprowadź swoje imię." data-success="OK!"></span>
                                 </div>
                                 <div class="input-field">
-                                    <input id="email" name="email" type="email" >
+                                    <input id="email" name="email" type="email"   required>
                                     <label for="email">Email <span>*</span></label>
-                                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                    <span class="helper-text" data-error="Wprowadź poprawny email." data-success="OK!"></span>
                                 </div>
                                 <div class="input-field">
                                     <textarea id="message" name="message" maxlength="500" class="materialize-textarea"></textarea>
                                     <label for="message">Message</label>
                                 </div>
 
-                                <div class="input-field right-align">
-                                    <button class="btn waves-effect waves-light blue"  type="submit" name="action">Send</button>
+                                <div class="input-field right-align ">
+                                    <input id="send" class="btn blue " type="submit" name="action" value="Send">
                                 </div>
+                                <div id="progressbar" class="progress hide">
+                                      <div class="indeterminate"></div>
+                                  </div>
                             </div>
                         </form>
                     </div>
                     </div>
-                </div>
+                </section>
         </main>
         <footer class="valign-wrapper center">
             <div class="container">
@@ -150,17 +153,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="./scripts/skicams.js"></script>
+    <script src="./scripts/emailValuation.js"></script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var tabs = document.querySelectorAll('.tabs');
             var sidenav = document.querySelectorAll('.sidenav');
             var sidenavInstance = M.Sidenav.init(sidenav);
             var tabsInstance = M.Tabs.init(tabs);
-
             var section = document.querySelectorAll('.scrollspy');
             var scrollSpy = M.ScrollSpy.init(section);
 
-            console.log(tabsInstance);
 
 
 

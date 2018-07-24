@@ -9,7 +9,6 @@
     let title1 = document.getElementById('card-first-title');
     let title2 = document.getElementById('card-second-title');
     let timeStamp = document.querySelectorAll('.time');
-    let card = document.querySelectorAll('#skicams .card-image');
 
     function getCurrentTime() {
         let d = new Date();
