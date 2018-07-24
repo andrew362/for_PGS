@@ -3,6 +3,11 @@
     --main-color: #2196F3;
 }
 
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
 body,
 html {
     margin: 0;
@@ -29,10 +34,13 @@ header nav {
     transform: translate(0, 2px);
 }
 
+header #mobile-nav {
+    text-transform: uppercase;
+}
+
 header .tabs .tab {
     margin-right: 50px;
 }
-
 
 header .tabs .tab a {
     color: #222;
@@ -40,7 +48,6 @@ header .tabs .tab a {
     font-weight: 600;
     padding: 0;
     font-size: 0.9rem;
-
 }
 
 header .tabs .tab a:focus,
@@ -98,12 +105,17 @@ main {
     padding-top: 30px;
 }
 
+#about .card-content {
+    font-weight: 400;
+}
+
+#about .card-content span{
+    font-weight: 500;
+}
 
 #skicams {
     padding-top: 30px;
 }
-
-
 
 #skicams .time {
     position: absolute;
@@ -129,22 +141,6 @@ main {
     font-weight: 500;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main #contact {
     position: relative;
     width: 100%;
@@ -163,7 +159,6 @@ main #contact .container .row {
     min-height: calc(100vh - 250px);
     width: 100%;
 }
-
 
 #contact-form {
     width: 25vw;
@@ -201,7 +196,6 @@ main #contact .container .row {
     color: #FF7726;
 }
 
-
 #contact-form .input-field input:focus + label {
     color: var(--main-color);
 }
@@ -219,6 +213,7 @@ main #contact .container .row {
     border-bottom: 1px solid var(--main-color);
     box-shadow: 0 1px 0 0 var(--main-color);
 }
+
 input[type="submit"] {
     color: #fff;
 }

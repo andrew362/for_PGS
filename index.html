@@ -8,7 +8,7 @@
     <meta name="author" content="Andrzej Lichoń">
     <meta name="description" content="Zadanie rekrutacyjne">
     <meta name="keywords" content="PGS Software, HTML,CSS,JavaScript">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/custom.css">
@@ -25,11 +25,11 @@
                     </a>
                         <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons blue-grey-text text-darken-4 ">menu</i></a>
                     </div>
-                    <div class="nav-content ">
+                    <div class="nav-content hide-on-med-and-down">
                         <ul class="tabs">
-                            <li class="tab"><a class="waves-effect active" href="#about">about</a></li>
-                            <li class="tab"><a class="waves-effect" href="#skicams">skicams</a></li>
-                            <li class="tab"><a class="waves-effect" href="#contact">contact</a></li>
+                            <li class="tab"><a id="tab1" class="tab-href waves-effect active" href="#about">about</a></li>
+                            <li class="tab"><a id="tab2" class="tab-href waves-effect" href="#skicams">skicams</a></li>
+                            <li class="tab"><a id="tab3" class="tab-href waves-effect" href="#contact">contact</a></li>
                         </ul>
                         <div class="divider"></div>
                     </div>
@@ -41,10 +41,9 @@
                 </ul>
             </div>
         </header>
-
         <main>
-                <section id="about" class="col">
-                   <div class="container">
+            <section id="about" class="col">
+                <div class="container">
                     <div class="row">
                         <div class="col s12 l4">
                             <div class="card hoverable ">
@@ -52,7 +51,7 @@
                                     <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ad303408eb930a76c2822c3cc7f7a33&auto=format&fit=crop&w=800&q=60">
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title">Card Title 1</span>
+                                    <h2><span class="card-title">Card Title 1</span></h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi recusandae, reiciendis corporis vel perferendis dicta laboriosam.</p>
                                 </div>
                             </div>
@@ -63,7 +62,7 @@
                                     <img src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b54e36ca60c8e2b8f57a897b94cdd5e3&auto=format&fit=crop&w=800&q=60">
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title">Card Title 2</span>
+                                    <h2><span class="card-title">Card Title 2</span></h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi recusandae, reiciendis corporis vel perferendis dicta laboriosam.</p>
                                 </div>
                             </div>
@@ -74,47 +73,44 @@
                                     <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=95618c0e060665fcf0c9e489d8b22982&auto=format&fit=crop&w=800&q=80">
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title">Card Title 3</span>
+                                    <h2><span class="card-title">Card Title 3</span></h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi recusandae, reiciendis corporis vel perferendis dicta laboriosam.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </section>
-                <section id="skicams" class="col ">
-            
-                   <div class="container">
-                       <div class="row">
-                           <div class="col s12 l6">
-                               <div class="card">
-                                 <div class="time">Time</div>
-                                  <span id="card-first-title" class="card-title center-align">Title1</span>
-                                   <div class="card-image">
-                                      <div class="camera-image" id="cam1"></div>
-                                      <div class="camera-image" id="cam2"></div>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="col s12 l6">
-                               <div class="card">
-                                 <div class="time">Time</div>
-                                  <span id="card-second-title" class="card-title center-align">Title2</span>
-                                   <div class="card-image">
-                                       <div class="camera-image" id="cam3"></div>
-                                        <div class="camera-image" id="cam4"></div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                
-                </section>
-
-                <section id="contact" class="col">
-                   <div class="container">
+            </section>
+            <section id="skicams" class="col ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <div class="card">
+                                <div class="time">Time</div>
+                                <h2><span id="card-first-title" class="card-title center-align">Title1</span></h2>
+                                <div class="card-image">
+                                    <div class="camera-image" id="cam1"></div>
+                                    <div class="camera-image" id="cam2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <div class="card">
+                                <div class="time">Time</div>
+                                <h2><span id="card-second-title" class="card-title center-align">Title2</span></h2>
+                                <div class="card-image">
+                                    <div class="camera-image" id="cam3"></div>
+                                    <div class="camera-image" id="cam4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="col">
+                <div class="container">
                     <div class="row valign-wrapper ">
-                        <form id="contact-form" class="col card-panel " action="send.html" method="post">
+                        <form id="contact-form" class="col card-panel" action="#" method="post" return false novalidate>
                             <div class="form-inner">
                                 <div class="input-field">
                                     <input id="name" name="name" type="text" required>
@@ -122,7 +118,7 @@
                                     <span class="helper-text" data-error="Wprowadź swoje imię." data-success="OK!"></span>
                                 </div>
                                 <div class="input-field">
-                                    <input id="email" name="email" type="email"   required>
+                                    <input id="email" name="email" type="email" required>
                                     <label for="email">Email <span>*</span></label>
                                     <span class="helper-text" data-error="Wprowadź poprawny email." data-success="OK!"></span>
                                 </div>
@@ -130,18 +126,17 @@
                                     <textarea id="message" name="message" maxlength="500" class="materialize-textarea"></textarea>
                                     <label for="message">Message</label>
                                 </div>
-
                                 <div class="input-field right-align ">
                                     <input id="send" class="btn blue " type="submit" name="action" value="Send">
                                 </div>
                                 <div id="progressbar" class="progress hide">
-                                      <div class="indeterminate"></div>
-                                  </div>
+                                    <div class="indeterminate"></div>
+                                </div>
                             </div>
                         </form>
                     </div>
-                    </div>
-                </section>
+                </div>
+            </section>
         </main>
         <footer class="valign-wrapper center">
             <div class="container">
@@ -150,40 +145,24 @@
         </footer>
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="./scripts/skicams.js"></script>
     <script src="./scripts/emailValuation.js"></script>
-    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var tabs = document.querySelectorAll('.tabs');
             var sidenav = document.querySelectorAll('.sidenav');
             var sidenavInstance = M.Sidenav.init(sidenav);
             var tabsInstance = M.Tabs.init(tabs);
-            var section = document.querySelectorAll('.scrollspy');
-            var scrollSpy = M.ScrollSpy.init(section);
-
-
-
-
-            var mobileNav = document.querySelectorAll('.sidenav-close');
-
-            [...mobileNav].forEach(function(el) {
+            var sideNavMenu = document.querySelectorAll('.sidenav-close');
+            var tabHref = document.querySelectorAll('.tab-href');
+            [...sideNavMenu].forEach(function(el, index) {
                 el.addEventListener('click', function(e) {
-                    var t = el.dataset.nav;
-
-
-
-
-                    var inst = M.Tabs.getInstance(tabs);
-                    inst.select('contact');
-                    //                    console.log(el);
-                });
+                    e.preventDefault();
+                    tabHref[index].click();
+                })
             });
-
         });
     </script>
 </body>
-
 </html>
