@@ -13,9 +13,9 @@
     function getCurrentTime() {
         let d = new Date();
         let dd = d.getDate();
-        let mm = d.getMonth()+1;
+        let mm = d.getMonth() + 1;
         let yyyy = d.getFullYear();
-        let currentTime = [(dd > 9 ? '' : '0') + dd , (mm > 9 ? '' : '0') + mm , yyyy].join('-');
+        let currentTime = [(dd > 9 ? '' : '0') + dd, (mm > 9 ? '' : '0') + mm, yyyy].join('-');
         [...timeStamp].forEach(t => t.textContent = currentTime);
     }
 
@@ -67,5 +67,8 @@
         })
         .catch(function (err) {
             console.error('Coś poszło nie tak', err.statusText, err);
-        })
+        });
+
+
+    
 })();

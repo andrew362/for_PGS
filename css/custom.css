@@ -13,10 +13,23 @@ h3 {
 body,
 html {
     margin: 0;
+    position: relative;
     padding: 0;
     height: 100%;
     min-width: 320px;
     font-family: Roboto, sans-serif;
+}
+
+.noIE {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: url('https://banner2.kisspng.com/20180216/lpq/kisspng-internet-explorer-6-web-browser-microsoft-internet-no-internet-cliparts-5a8722d3639da9.2832476515188057154081.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 9999 !important;
 }
 
 #wrapper {
