@@ -1,5 +1,5 @@
 if (detectIE()) {
-    alert("Proszę użyj nowszej przeglądarki!");
+    alert("Proszę użyj innej przeglądarki!");
     var bg = document.querySelector('html');
     var div = document.createElement('div');
     div.classList.add('noIE');
